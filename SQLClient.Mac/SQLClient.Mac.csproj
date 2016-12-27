@@ -128,12 +128,21 @@
     <Compile Include="ViewModels\Main\TableDefinitionItem.cs" />
     <Compile Include="ViewModels\Main\TableDefinitionDataSource.cs" />
     <Compile Include="ViewModels\Main\TableDefinitionDelegate.cs" />
+    <Compile Include="Views\Table\TableDataView.cs" />
+    <Compile Include="Views\Table\TableDataViewController.cs" />
+    <Compile Include="Views\Table\TableDataView.designer.cs">
+      <DependentUpon>TableDataView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Table\TableDataViewController.designer.cs">
+      <DependentUpon>TableDataViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Main.storyboard" />
     <InterfaceDefinition Include="Views\Login\LoginView.xib" />
     <InterfaceDefinition Include="Views\Common\MessageView.xib" />
     <InterfaceDefinition Include="Views\Table\TableDefinitionView.xib" />
+    <InterfaceDefinition Include="Views\Table\TableDataView.xib" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
 </Project>

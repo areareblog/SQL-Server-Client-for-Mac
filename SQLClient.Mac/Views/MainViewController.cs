@@ -189,6 +189,16 @@ namespace SQLClient.Mac
 
 		private void ShowTableData(string dbName, string tableName)
 		{
+			var tableDataCtrl = new TableDataViewController()
+			{
+				Title = tableName,
+				DbName = dbName,
+				TableName = tableName,
+				TableDefinitionItems = GetTableDefinition(dbName, tableName)					
+			};
+
+			PresentViewControllerAsModalWindow(tableDataCtrl);
+
 		}
 
 		private void ClearContensView()
